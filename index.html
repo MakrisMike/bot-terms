@@ -8,39 +8,38 @@
     body {
       margin: 0;
       font-family: Arial;
-      background: #0d0d0d;
-      color: white;
-      text-align: center;
+      background: #0b0b0b;
+      color: #fff;
     }
 
     header {
-      padding: 50px;
-      background: #1a1a1a;
+      text-align: center;
+      padding: 60px 20px;
+      background: #151515;
     }
 
     .logo {
-      font-size: 60px;
+      font-size: 55px;
       font-weight: bold;
-      letter-spacing: 5px;
+      letter-spacing: 4px;
     }
 
-    .tagline {
+    .subtitle {
       color: #aaa;
       margin-top: 10px;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
       padding: 20px;
     }
 
     .card {
       background: #1a1a1a;
-      margin: 20px 0;
       padding: 20px;
+      margin: 20px 0;
       border-radius: 12px;
-      text-align: left;
     }
 
     a {
@@ -52,18 +51,20 @@
       text-decoration: underline;
     }
 
-    button {
-      padding: 12px 20px;
-      border: none;
-      border-radius: 8px;
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
       background: #00bfff;
       color: black;
-      cursor: pointer;
       font-weight: bold;
+      border-radius: 8px;
+      margin-top: 10px;
     }
 
-    button:hover {
-      background: #0099cc;
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
     }
   </style>
 
@@ -73,44 +74,51 @@
 
 <header>
   <div class="logo">MB</div>
-  <div class="tagline">Makris Bot - Advanced Security & Moderation Bot</div>
+  <div class="subtitle">Makris Bot - Security • Moderation • Anti-Nuke</div>
 </header>
 
 <div class="container">
 
+  <!-- INVITE -->
   <div class="card">
     <h2>:rocket: Invite Bot</h2>
-    <p>Invite Makris Bot to your server and secure it instantly.</p>
-    <a href="https://discord.com/oauth2/authorize?client_id=1498478707151736963&permissions=1099780130902&integration_type=0&scope=bot+applications.commands" target="_blank">
-      <button>Invite Now</button>
-    </a>
+    <p>Add Makris Bot to your server for advanced protection and moderation tools.</p>
+    <a class="btn" href="YOUR_INVITE_LINK" target="_blank">Invite Now</a>
   </div>
 
+  <!-- SUPPORT -->
   <div class="card">
     <h2>:speech_balloon: Support Server</h2>
-    <p>Join our support community for help and updates.</p>
-    <a href="https://discord.gg/nsNeQnG54" target="_blank">Join Support</a>
+    <p>Need help or support? Join our official Discord server.</p>
+    <a href="YOUR_SUPPORT_SERVER" target="_blank">Join Support</a>
   </div>
 
+  <!-- TERMS -->
   <div class="card">
     <h2>:scroll: Terms of Service</h2>
     <p>
-      Makris Bot is a moderation and security tool. Abuse or exploitation is not allowed.
-      Server owners are responsible for bot usage.
+Makris Bot is provided as a moderation and security tool for Discord servers.
+      By using the bot, server owners agree they are responsible for its configuration and usage.
+      Any abuse, exploitation, or attempt to break the bot’s systems may result in restriction or blocking of access.
+      We do not guarantee continuous uptime and may update or change features at any time.
     </p>
   </div>
 
+  <!-- PRIVACY -->
   <div class="card">
     <h2>:closed_lock_with_key: Privacy Policy</h2>
     <p>
-      We only store essential data like server IDs, user IDs for moderation, logs and configuration.
-      No data is sold or shared with third parties.
+      Makris Bot only stores minimal data required for functionality such as:
+      server IDs, user IDs for moderation and logs, and channel configuration data.
+      This data is strictly used for bot features like anti-nuke protection, moderation commands, and logging systems.
+      We do not sell, share, or distribute any user data to third parties.
+      Server owners can remove the bot at any time to stop all data processing.
     </p>
   </div>
 
 </div>
 
-<footer style="padding:20px; color:#555;">
+<footer>
   © 2026 Makris Bot. All rights reserved.
 </footer>
 
